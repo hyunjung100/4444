@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🌱 스마트 하우스 설계 멘토봇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef8f1;
+        text-align: center;
+        padding: 2rem;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: #444;
+        font-size: 1.1rem;
+      }
+      #chatbot {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌱 스마트 하우스 설계 멘토봇</h1>
+    <p>궁금한 걸 챗봇에게 물어보세요!</p>
+    <div id="chatbot"></div>
+
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/npm/openai-assistant-web@0.1.5/dist/web.js";
+
+      Chatbot.init({
+        assistantId: "asst_OPNtoQ4momPdOtTVczgnBn4u",
+        apiKey: "YOUR_API_KEY_HERE",
+        selector: "#chatbot"
+      });
+    </script>
+  </body>
+</html>
